@@ -1,0 +1,331 @@
+@font-face{
+  font-family:"Urban";
+  src:url("Data/urbandefender.ttf");
+}
+@font-face{
+  font-family:"Regular";
+  src:url("Data/regular.ttf");
+}
+::-webkit-scrollbar{
+  height:45px;
+  width:100%;
+}
+
+::-webkit-scrollbar-thumb{
+  background:white;
+	cursor:url(Data/cursor.png),auto;
+}
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  width: 45px;
+  height:45px;
+background:url("Data/left.png");
+cursor:url(Data/cursor.png),auto;
+}
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+  width: 45px;
+  height:45px;
+  background:url("Data/right.png");
+  cursor:url(Data/cursor.png),auto;
+}
+::-webkit-scrollbar-track{
+  background:black;
+  border-radius: 0px;
+  cursor:url(Data/cursor.png),auto;
+}
+body {
+  overflow:hidden;
+   padding:0px;
+   cursor:url(Data/cursor.png),auto;
+ }
+img.HamburgerMenu{
+  border: 0px solid;
+    border-radius: 1px;
+    padding: 0px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:102;
+}
+img.HamburgerMenu:hover{
+content:url("Data/Hamburger_Menu _hover.png");
+}
+img.MenuBar{
+    border: 0px solid;
+    padding: 0px;
+    position:absolute;
+    top:0px;
+    left:45px;
+    z-index:101;
+}
+img.Back{
+border: 0px solid;
+padding: 0px;
+position:absolute;
+top:0px;
+left:0px;
+z-index:102;
+}
+h3.Text{
+  position: absolute;
+  padding:0px;
+  vertical-align:middle;
+  color:white;
+  background-color:black;
+  top:-27px;
+  left:53px;
+  z-index:102;
+  font-size:2em;
+  font-family:"Urban";
+  font-weight:lighter;
+}
+img.verticalbar{
+  visibility: visible;
+  position:absolute;
+  z-index:101;
+
+}
+img.Tile{
+  position: absolute;
+  visibility: visible;
+  z-index: 7;
+}
+div.Tiles{
+position:absolute;
+}
+img.Logo{
+  position: absolute;
+  top:0px;
+  z-index:101;
+}
+#Tile1:hover{
+  filter:invert();
+}
+#Tile2:hover{
+  filter:invert();
+}
+#Tile3:hover{
+  filter:invert();
+}
+#Tile4:hover{
+  filter:invert();
+}
+#Tile5:hover{
+  filter:invert();
+}
+#Tile6:hover{
+    filter:invert();
+}
+#Tile7:hover{
+    filter:invert();
+}
+img.Black{
+  position:absolute;
+  z-index:101;
+}
+@keyframes fadein {
+  from{
+    opacity:0.1;
+  }
+  to1{
+    opacity:0.2;
+  }
+  to2{
+    opacity:0.3;
+  }
+  to3{
+    opacity:0.4;
+  }
+  to4{
+    opacity:0.5;
+  }
+  to5{
+    opacity:0.6;
+  }
+  to6{
+    opacity:0.7;
+  }
+  to7{
+    opacity:0.8;
+  }
+  to8{
+    opacity:0.9;
+  }
+  to9{
+    opacity:1;
+  }
+}
+@keyframes fadeinn {
+  0%{
+    visibility: visible;
+    opacity:0.1;
+  }
+  10%{
+    opacity:0.2;
+  }
+  20%{
+    opacity:0.3;
+  }
+  to3{
+    opacity:0.4;
+  }
+  30%{
+    opacity:0.5;
+  }
+  40%{
+    opacity:0.6;
+  }
+  50%{
+    opacity:0.7;
+  }
+  60%{
+    opacity:0.8;
+  }
+  90%{
+    opacity:0.9;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+h3.TextLogo{
+position: absolute;
+animation-name: fadein;
+animation-duration: 3s;
+animation-delay: 0s;
+left:55px;
+top:-26px;
+padding: 0px;
+z-index:101;
+font-size:2em;
+font-family:"Urban";
+font-weight:lighter;
+color:white;
+}
+@keyframes scalein{
+  0%{
+      visibility: visible;
+  }
+  from0{
+    transform:scale(0);
+  }
+  from{
+    transform: scale(0.1);
+  }
+  to1{
+    transform: scale(0.2);
+   }
+  to2{
+    transform: scale(0.3);
+  }
+  to3{
+    transform: scale(0.4);
+  }
+  to4{
+    transform: scale(0.5);
+  }
+  to5{
+    transform: scale(0.6);
+  }
+  to6{
+    transform: scale(0.7);
+  }
+  to7{
+    transform: scale(0.8);
+  }
+  to8{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+@keyframes scaleout{
+  0%{
+      visibility: visible;
+  }
+  from0{
+    transform:scale(1);
+  }
+  from{
+    transform: scale(0.9);
+  }
+  to1{
+    transform: scale(0.8);
+   }
+  to2{
+    transform: scale(0.7);
+  }
+  to3{
+    transform: scale(0.6);
+  }
+  to4{
+    transform: scale(0.5);
+  }
+  to5{
+    transform: scale(0.4);
+  }
+  to6{
+    transform: scale(0.3);
+  }
+  to7{
+    transform: scale(0.2);
+  }
+  100%{
+  transform: scale(0.1);
+  visibility: hidden;
+  }
+}
+div.Cont{
+  height:100%;
+  color:white;
+  text-align:center;
+  display: flex;
+  flex: 0 0 40em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation-name: scalein;
+  animation-duration: 2s;
+  padding: 10px;
+  font-size:1vw;
+  visibility: hidden;
+  font-weight:lighter;
+  font-family: "Regular";
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  box-sizing: border-box;
+}
+div pre{
+  font-family:'Regular';
+  font-style: solid;
+  font-weight: lighter;
+  font-size: 1vw;
+}
+div.Cont:hover{
+  border: 5px solid white;
+  filter:brightness(80%);
+}
+@keyframes blink {
+0%{
+  opacity: 1;
+}
+50%{
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+}
+}
+#close:hover{
+  filter:invert();
+}
+#teachingbox::before{
+  content:"";
+  border: 1vh solid black;
+  background-color:black;
+  border-radius:1000px;
+  position:relative;
+  top:-5px;
+  left:43%;
+}

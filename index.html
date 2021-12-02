@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html style="overflow:hidden;height:100%;width:100%;margin:0px;padding:0px;">
+<head>
+<title>Muhieddine Shebaro</title>
+<link rel="icon" href="Data/icon.png">
+ <link rel="stylesheet" type="text/css"href="PersonalPageCSS.css">
+<script src="Data/jquery.min.js"></script>
+<script type="text/javascript" src="PersonalPageJS.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script>
+var temp = navigator.userAgent;
+var regularexpression = /android|iphone|kindle|ipad/i;
+let mobile = regularexpression.test(temp);
+if(mobile==true){
+alert("Please rotate your phone to landscape orientation!");
+}
+</script>
+</head>
+<body id="body" onload="scroll();ConSize();" onresize="ConSize();" style="margin:0px;padding:0px;overflow:hidden;height:100%;width:100%;">
+<img id="Hamburger"class="HamburgerMenu" src="Data\Hamburger_Menu.png" alt="Hamburger Menu" height="45" width="45" onclick="action()" title="Open Menu" style="visibility:visible;"/>
+<img id="Back"class="Back" src="Data\Hamburger_Menu _hover.png" alt="Hamburger Menu" height="45" width="45" onclick="action()"title="Close Menu"style="visibility:hidden;"/>
+<img id="MenuBar"class="MenuBar" src="Data\black_bar.png" alt="Black Bar" height="45" width="100%" title="Menu Bar"onmouseover="HoverDefault()"/>
+<img id="Logo"class="Logo" style="left:0%;" src="Data\logo.gif" alt="Logo" height="45" width="70"onload="Logo()"/>
+<img id="Black"class="Black" style="left:0px; top:0px" src="Data\black_bar.png" alt="Black" height="45" width="300"/>
+<h3 id="text" class="Text"onmouseover="HoverDefault()" style="visibility:hidden;padding-top:0px;"> </h3>
+<h3 id="textlogo" class="TextLogo"onmouseover="HoverDefault()" style="visibility:visible; padding-top:0px;">Muhieddine Shebaro</h3>
+<img id="verticalbar" src="Data\vertical_bar.jpg" class="verticalbar" style="left:-21%;top:45px;border-right:5px solid black;z-index:3;" alt="verticalbar" height="100%" width="14%"onmouseover="HoverDefault()"/>
+<div class="Tiles" id="Menu" style="left:-20%;z-index:4; top:40vh;width:14%;height:20%;">
+  <img id="Tile1"class="Tile" src="Data\description_Tile.png" alt="tile1" height="50%" width="50%" style="left:0%;top:-50%;border-radius:15px;"onmouseover="TilesHover1()" onclick="tile1link();"/>
+  <img id="Tile2"class="Tile" src="Data\education_Tile.png" alt="tile2" height="50%" width="50%" style="left:50%;top:-50%;border-radius:15px;"onmouseover="TilesHover2()"onclick="tile2link();"/>
+  <img id="Tile3"class="Tile" src="Data\hobbies_Tile.png" alt="tile3" height="50%" width="50%" style="left:0%;top:0%;border-radius:15px;"onmouseover="TilesHover3()"onclick="tile3link();"/>
+  <img id="Tile4"class="Tile" src="Data\work_tile.png" alt="tile4" height="50%" width="50%" style="left:50%;top:0%;border-radius:15px;"onmouseover="TilesHover4()"onclick="tile4link();"/>
+  <img id="Tile5"class="Tile" src="Data\publications_Tile.png" alt="tile5" height="50%" width="50%" style="left:0%;top:50%;border-radius:15px;"onmouseover="TilesHover5()"onclick="tile5link();"/>
+  <img id="Tile6"class="Tile" src="Data\research_Tile.png" alt="tile6" height="50%" width="50%" style="left:50%;top:50%;border-radius:15px;"onmouseover="TilesHover6()"onclick="tile6link();"/>
+  <img id="Tile7"class="Tile" src="Data\about.png" alt="about" height="30%" width="20%" style="top:100%;left:40%;border-radius:15px;"onmouseover="TilesHover7()" onclick="action();About()"/>
+</div>
+<div id="Content" class="Content" onmouseover="HoverDefault();" style="position: absolute; left:0px; top:45px;width:100%; height:100%; z-index:2; overflow-x:auto; overflow-y:hidden;display:flex; flex-direction:row;white-space:normal;background-color:gray;background-repeat: no-repeat;background-size: fill;margin:0px;padding:0px;">
+<table>
+  <div class="Cont" id="Introduction" style='background-color: rgb(16, 94, 38)' title="Biography">
+    <img id='IntroductionImage' src="Data/profilepic.jpg" alt="profilepic" style="border:2px solid black;float:right;margin-left:5px;margin-right:5px;margin-top:6px;"height="25%" width="17%"/>
+    <pre style="font-size:1.8em;font-weight:lighter;font-family:Urban;padding-bottom:0px;margin-bottom:0px;padding-top:10px;margin-top:0px;">Biography</pre>
+<pre>First Year PhD. Student & Doctoral Instructional Assistant at Texas State
+University with interest in Machine Learning, Data Mining, and Image Processing.
+I programmed my first application for PC using vb.net language in high school
+(Simple Unit Converter).I'm from Lebanon (a tiny Arabic Middle-Eastern Country).
+I'm well-versed in numerous programming languages including PHP, JavaScript, Java,
+Bash, MySQL, C++, and Python.I'm seeking to leverage technical skills and education
+to do research, broaden horizons, explore multiple avenues, and seek solutions to
+world problems.</pre>
+  </div>
+<div class="Cont" id="Education" style='background-color:#301934'>
+<img id="EducationImage" src="Data/education.png" alt="education" height="20%" width="20%" style="padding-bottom:0px;" title="Education"/>
+<pre style="font-size:1.8em;font-weight:lighter;font-family:Urban;padding-bottom:0px;margin-bottom:0px;padding-top:10px;margin-top:0px;">Education</pre>
+<pre>Texas State University - San Marcos, Texas - USA (Present)
+PhD. in Computer Science - Information Management (CGPA: None)
+Beirut Arab University – Beirut, Lebanon (2021)
+Bachelor of Science in Computer Science (GPA: 3.97)
+Ikhaa National School – Beirut, Lebanon (2017)
+High School Diploma Baccalaureate - Life Sciences (Score: 16.12)</pre>
+</div>
+<div class="Cont" id="Research Interests" style='background-color:#8B0000' title="Research Interests">
+  <img id="ResearchImage" src="Data/research.png" alt="research" height="20%" width="20%" style="padding-bottom:0px;"/>
+<pre style="font-size:1.7em;font-weight:lighter;font-family:Urban;padding-bottom:0px;margin-bottom:0px;padding-top:10px;margin-top:0px;">Research Interests</pre>
+<pre>Machine Learning
+Data Mining
+Image Processing</pre>
+</div>
+<div class="Cont" id="Publications" style='background-color:#654321' title="Publications & Projects">
+  <img id="PublicationsImage" src="Data/publications.png" alt="Publications" height="20%" width="20%" style="padding-bottom:0px;"/>
+  <pre style="font-size:1.7em;font-weight:lighter;font-family:Urban;padding-bottom:0px;margin-bottom:0px;padding-top:10px;margin-top:0px;">Publications</pre>
+<pre>None At the Moment :(</pre>
+</div>
+<div class="Cont" id="Working" style='background-color:#00008B' title="Teaching">
+  <img id="WorkingImage" src="Data/work.png" alt="Teaching" height="20%" width="20%" style="padding-bottom:0px;"/>
+<pre style="font-size:1.8em;font-weight:lighter;font-family:Urban;padding-bottom:0px;margin-bottom:0px;padding-top:10px;margin-top:0px;">Teaching</pre>
+<pre>Doctoral Instructional Assistant (Present - 2021):
+Responsible for grading assignments with Pallavi Krishna
+Reddy & Tutoring in both CS3358 & CS3360 (Dr. Kecheng Yang)</pre>
+</div>
+<div class="Cont" id="Languages" style='background-color:#A34200' title="Languages">
+  <img src="Data/languages.png" alt="languages" height="20%" width="20%" style="padding-bottom:0px;"/>
+<pre style="font-size:1.8em;font-weight:lighter;font-family:Urban;padding-bottom:0px;margin-bottom:0px;padding-top:10px;margin-top:0px;">Languages</pre>
+<pre>English (fluent)
+Arabic (native speaker)
+French (elementary knowledge)</pre>
+</div>
+<div class="Cont" id="Hobbies" style='background-color:#575710' title="Extracurricular Activities">
+  <img id="HobbiesImage" src="Data/hobbies.png" alt="Hobbies" height="20%" width="20%" style="padding-bottom:0px;"/>
+<pre style="font-size:1.7em;font-weight:lighter;font-family:Urban;padding-bottom:0px;margin-bottom:0px;padding-top:10px;margin-top:0px;">Extracurricular Activities</pre>
+<pre>Hosting Video Games Tournaments Online (Halo & Dark Souls)
+Making Spotify Music Playlists (Dubstep & Electronic)
+Doing Programming Challenges Online
+</pre>
+</div>
+<div class="Cont" id="Contact Information" style='background-color:#993855'title="Contact Information">
+  <img src="Data/introduction.png" alt="Contact Information" height="20%" width="20%" style="padding-bottom:0px;"/>
+<pre style="font-size:1.7em;font-weight:lighter;font-family:Urban;padding-bottom:0px;margin-bottom:0px;padding-top:10px;margin-top:0px;">Contact Information</pre>
+<pre>Email: pri5@txstate.edu
+Phone Number: +1(737)213-2307
+Office#: TBD
+Monday 12PM-2PM (Online)
+Wednesday 12PM-2PM (In-Person)</pre>
+</div>
+<div id="dialog" style='height:100%;width:100%;left:0px;top:0px;position: absolute;visibility: hidden;animation-fill-mode: forwards;animation-direction: normal;'>
+<img id="close" title="Close" height="4%" width="2%" src="Data/close.png" style="float:right;padding:30px;" onclick="closedialog()"/>
+<div style="left:15%;top:12%;position:absolute;width:68%; height:70%;">
+<div style="border-top-left-radius:40px;border-top-right-radius:40px;background-color:black;margin:0px;padding:0px;">
+<p id="titletext"style="font-family:Regular;font-size:1.6vw;color:white;font-weight:bold; text-align:center;padding:0px;margin:0px;"></p>
+</div>
+<div id="whitecontent" style="background-color:white;border-bottom-left-radius:40px;height:55vh;border-bottom-right-radius:40px;padding:0px;margin:0px;">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
